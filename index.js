@@ -11,7 +11,7 @@ app.on('ready', () => {
         autoHideMenuBar: true
     });
 
-    _win.loadURL(`file:///${__dirname}/client/dev/index.html`);
+    _win.loadURL(`file:///${__dirname}/client/index.html`);
 
     _win.on('closed', () => {
         _win = null;
