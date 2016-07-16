@@ -2,11 +2,33 @@
 <html>
     <head>
         <title>xplode</title>
+        <link rel="stylesheet" href="./index.css" />
     </head>
 
     <body>
-        <h1>!</h1>
+        <div class="form-container">
+            <form name="cfgXplodeForm">
+                <input name="url"
+                       type="text"                        
+                       placeholder="url"
+                       value="http://jsonplaceholder.typicode.com/todos/1" />
 
-        <script src="./client.js"></script>
+                <input name="amount"
+                       type="text"                        
+                       placeholder="amount" 
+                       value="10" />
+
+                <button type="button"
+                        id="btn-xplode">
+                    xplode!
+                </button>                        
+            </form>
+        </div> 
+
+        <div class="done-container">
+
+        </div>
+
+        <script src="./main.js"></script>
     </body>
 </html>

@@ -6,9 +6,10 @@ const BrowserWindow = electron.BrowserWindow;
 
 app.on('ready', () => {
     let _win = new BrowserWindow({
-        width: 700,
-        height: 700,
-        autoHideMenuBar: true
+        width: 900,
+        height: 900,
+        autoHideMenuBar: true,
+        resizable: false
     });
 
     _win.loadURL(`file:///${__dirname}/client/index.html`);
