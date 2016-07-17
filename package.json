@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ericmdantas/xplode#readme",
   "dependencies": {
-    "electron-prebuilt": "^1.2.7"
+    "electron-prebuilt": "^1.2.7",
+    "vue": "^1.0.26"
   }
 }
