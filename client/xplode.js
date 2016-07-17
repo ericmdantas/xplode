@@ -1,12 +1,14 @@
 ;(function() {
     Vue.component('xplode', {
         data() {            
-            this.loading = false;
-            this.done = false;
+            return {
+                loading: false,
+                done: false,
+                xplode: {
+                    amount: 11,
+                    url: "jsonplaceholder.typicode.com/todos/1"
 
-            this.xplode = {
-                amount: 11,
-                url: "jsonplaceholder.typicode.com/todos/1"
+                }
             }
         },
         template: `
@@ -38,9 +40,12 @@
         methods: {
             go(x) {
                 this.loading = true;
-                this.done = true;
+                this.done = false;
 
-                console.log(x);
+                setTimeout(() => {
+                    this.loading = false;
+                    this.done = true;
+                }, 1000);
             }
         }
     });
